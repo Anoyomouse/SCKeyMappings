@@ -16,12 +16,11 @@
         <span class="navbar-brand" href="#">StarCitizen Keymapper</span>
       </div>
     </nav>
-    <!-- ko let: { key_class: key_class } -->
-    <div class="container-fluid keyboard">
+    <div class="keyboard">
       <!-- ko foreach: { data: keyboard, as: 'row' } -->
         <div class="key_row" data-bind="foreach: { data: row, as: 'key' }">
           <!-- ko ifnot: key.startsWith('gap') -->
-          <div class="key" data-bind="text: $root.caption(key), class: key_class(key), event: { mouseover: $root.mouseOver}"></div>
+          <div class="key" data-bind="text: $root.caption(key), class: $root.key_class(key), click: $root.itemClick, event: { mouseover: $root.mouseOver }"></div>
           <!-- /ko -->
           <!-- ko if: key.startsWith('gap') -->
           <div data-bind="class: key">&nbsp;</div>
@@ -29,21 +28,20 @@
         </div>
       <!-- /ko -->
     </div>
-    <!-- /ko -->
-    <p>
-      <ul class="list_group desc" data-bind="with: selectedKeyDescription, as: 'item'">
-        <!-- ko foreach: { data: item } -->
-        <li class="list-group-item">
-          <div class="head" data-bind="text: cat"></div>
-          <ul class="list-group-horizontal">
-            <!-- ko foreach: { data: keys } -->
-            <li class="list-group-item flex-fill line" data-bind="text: $data"></li>
-            <!-- /ko -->
-          </ul>
-        </li>
-        <!-- /ko -->
+    <div class="side-bar">
+      <div class="side-bar-head">Selected overlays</div>
+      <ul class="list-group side-bar-list" data-bind="foreach: categories">
+        <li class="list-group-item" data-bind="text: action_map[$data], class: $root.catClass($data), click: $root.toggleCat"></li>
       </ul>
-    </p>
+    </div>
+    <div class="desc" data-bind="foreach: { data: selectedKeyDescription, as: 'item' }">
+      <div class="desc_group">
+        <div class="head" data-bind="text: cat"></div>
+        <!-- ko foreach: { data: keys } -->
+        <div class="line" data-bind="text: $data"></div>
+        <!-- /ko -->
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

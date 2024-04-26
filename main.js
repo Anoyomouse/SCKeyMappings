@@ -28,6 +28,9 @@ var o_o = function () {
     if (self.used_keys.indexOf(key) >= 0) {
       clas += " used";
     }
+    if (self.selectedClick() == key) {
+      clas += " fixed"
+    }
     if (self.selected() == key) {
       clas += " selected"
     }
@@ -41,7 +44,11 @@ var o_o = function () {
   self.selectedCategories = ko.observableArray([]);
   ko.utils.arrayPushAll(self.selectedCategories, self.categories);
 
-  self.mouseOver = (data) => { self.selected(data); }
+  self.mouseOver = (data) => {
+    if (self.selectedClick() === undefined) {
+      self.selected(data);
+    }
+  }
   self.caption = (data) => {
     if (data in key_mappings)
       return key_mappings[data];
@@ -50,6 +57,18 @@ var o_o = function () {
     return data;
   }
 
+  self.selectedClick = ko.observable();
+  self.itemClick = (data) => {
+    let selData = ko.unwrap(self.selectedClick);
+    console.log("Click", data, selData, data === selData);
+    if (selData === undefined || selData !== data) {
+      self.selected(data);
+      self.selectedClick(data);
+    } else {
+      self.selectedClick(undefined);
+    }
+  };
+
   self.selectedKeyDescription = ko.pureComputed(() => {
     let val = self.selected();
     if (val === undefined) {
@@ -57,16 +76,35 @@ var o_o = function () {
     }
 
     mappings = [];
-    ko.utils.arrayForEach(self.selectedCategories(), (k) => {
+    ko.utils.arrayForEach(self.categories, (k) => {
       if (!(k in mapping_data)) { // stopwatch, prone
         return;
       }
-      if ( val in mapping_data[k] ) {
-        mappings.push({ "cat": action_map[k], "keys": mapping_data[k][val] });
+      if (self.selectedCategories.indexOf(k) > 0) {
+        if ( val in mapping_data[k] ) {
+          mappings.push({ "cat": action_map[k], "keys": mapping_data[k][val] });
+        }
       }
     })
 
     return mappings;
   });
+
+  self.catClass = (cat) => {
+    // console.log("CSS Class", cat, self.selectedCategories.indexOf(cat));
+    if (self.selectedCategories.indexOf(cat) >= 0) {
+      return "bg-primary";
+    }
+    return "";
+  }
+
+  self.toggleCat = (cat) => {
+    console.log("Click", cat);
+    if (self.selectedCategories.indexOf(cat) >= 0) {
+      self.selectedCategories.remove(cat);
+    } else {
+      self.selectedCategories.push(cat);
+    }
+  }
 }
 ko.applyBindings(new o_o());

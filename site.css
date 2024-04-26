@@ -1,7 +1,9 @@
 .keyboard {
   padding-top: 10px;
-  width: 100%;
+  padding-left: 10px;
+  width: 1200px;
   display: inline-block;
+  border-right: 1px solid gray;
 }
 
 .key_row {
@@ -64,14 +66,19 @@
   color: darkred;
 }
 
-.head_key {
-  display: block;
-  width: 100%;
-  clear: both;
+.fixed {
+  background-color: #0dcaf0;
 }
 
-.head_key .head {
-  font-size: larger;
+.desc {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.desc .head {
+  font-size: +1;
   font-weight: bold;
 }
 
@@ -101,7 +108,7 @@
 .key_np_add,
 .key_np_enter {
   height: 102px;
-  position: fixed;
+  position: absolute;
 }
 
 .key_np_0 {
@@ -120,4 +127,19 @@
 
 .key_space {
   width: 300px;
+}
+
+.side-bar {
+  display: inline-block;
+}
+
+.side-bar-head {
+
+}
+
+.side-bar-list {
+  width: auto;
+  height: 240px;
+  overflow: auto;
+  display: inline-block;
 }
