@@ -15,11 +15,11 @@ for(i = 0; i <= 2; i++) {
 var o_o = function () {
   var self = this;
   self.keyboard = [];
-  self.keyboard.push(["escape", "gap_40", "f1", "f2", "f3", "f4", "gap_40", "f5", "f6", "f7", "f8", "gap_40", "f9", "f10", "f11", "f12", "gap_20", "print", "scrolllock", "pause"]);
+  self.keyboard.push(["escape", "gap_fkey", "f1", "f2", "f3", "f4", "gap_fkey", "f5", "f6", "f7", "f8", "gap_fkey", "f9", "f10", "f11", "f12", "gap_20", "print", "scrolllock", "pause"]);
   self.keyboard.push(["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "minus", "equals", "backspace", "gap_20", "insert", "home", "pgup", "gap_20", "numlock", "np_divide", "np_multiply", "np_subtract"]);
   self.keyboard.push(["tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "lbracket", "rbracket", "backslash", "gap_20", "delete", "end" , "pgdn", "gap_20", "np_7", "np_8", "np_9", "np_add"]);
-  self.keyboard.push(["caps", "a", "s", "d", "f", "g", "h", "j", "k", "l", "semicolon", "apostrophe", "enter", "gap_20", "gap_60", "gap_60", "gap_60", "gap_20", "np_4", "np_5", "np_6"]);
-  self.keyboard.push(["lshift", "z", "x", "c", "v", "b", "n", "m", "comma", "period", "slash", "rshift", "gap_20", "gap_60", "up" , "gap_60", "gap_20", "np_1" , "np_2", "np_3", "np_enter"]);
+  self.keyboard.push(["caps", "a", "s", "d", "f", "g", "h", "j", "k", "l", "semicolon", "apostrophe", "enter", "gap_20", "gap_key", "gap_key", "gap_key", "gap_20", "np_4", "np_5", "np_6"]);
+  self.keyboard.push(["lshift", "z", "x", "c", "v", "b", "n", "m", "comma", "period", "slash", "rshift", "gap_20", "gap_key", "up" , "gap_key", "gap_20", "np_1" , "np_2", "np_3", "np_enter"]);
   self.keyboard.push(["lctrl", "lwin", "lalt", "space", "ralt", /*"rwin"*/ "fn", "menu", "rctrl", "gap_20", "left", "down" , "right", "gap_20", "np_0", "np_period"]);
 
   self.used_keys = all_keys;

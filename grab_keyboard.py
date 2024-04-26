@@ -77,7 +77,9 @@ class Mappings:
                 for action in child:
                     # print(action.tag, action.attrib)
                     if 'keyboard' in action.attrib:
-                        key = action.attrib['keyboard']
+                        key = action.attrib['keyboard'].lower()
+                        if key in ['', ' ']:
+                            continue
                         modifier = ''
                         if '+' in key:
                             k = key.split('+')
@@ -96,7 +98,7 @@ class Mappings:
                             'name': action.attrib['name'],
                             'label': self.get_string(action.attrib, 'UILabel', action.attrib['name']),
                             "mode": self.get_key_mask(action.attrib), # .get('activationMode', ''),
-                            "description": self.get_string(action.attrib, 'UIDescription', action.attrib['name']),
+                            "description": self.get_string(action.attrib, 'UIDescription', ''),
                             'category': action.attrib.get('Category', '')
                         }
                         if modifier:
@@ -117,7 +119,7 @@ class Mappings:
             for v in val:
                 self.print_key(key, v)
             return
-        print(f'   {val['mode']} {' '.join([x for x in filter(lambda x: x, [val.get('mod', ''), key])])}: {val['label']} - {val['description']}')
+        print(f'   {val['mode']} {' '.join([x for x in filter(lambda x: x, [val.get('mod', ''), key])])}: {val['label']}{' - ' if val['description'] else ''}{val['description']}')
 
     def print(self):
         """Prints the mappings for the keyboard."""
@@ -150,7 +152,7 @@ class Mappings:
                     self.print_key(key, self.mappings[cat][key])
 
         for key in sorted(self.all_keys):
-            if key not in [' ', ''] and key not in self.keyboard_order:
+            if key not in self.keyboard_order:
                 for cat in self.mappings:
                     if key in self.mappings[cat]:
                         if cat in self.actionmap:
@@ -166,13 +168,11 @@ class Mappings:
 
         keys = defaultdict(lambda: defaultdict(lambda: []))
         for key in self.all_keys:
-            if key in ['', ' ']:
-                continue
             for cat in self.mappings:
                 if key in self.mappings[cat]:
                     my_cat = self.actionmap[cat].get('label', cat)
                     keys[key][my_cat] = [
-                            f"{val['mode']} {' '.join([x for x in filter(lambda x: x, [val.get('mod', ''), key])])}: {val['label']} - {val['description']}"
+                            f"{val['mode']} {' '.join([x for x in filter(lambda x: x, [val.get('mod', ''), key])])}: {val['label']}{' - ' if val['description'] else ''}{val['description']}"
                             for val in self.mappings[cat][key]
                         ]
         return keys
@@ -185,15 +185,22 @@ class Mappings:
         keys = OrderedDict()
         for cat in self.mappings:
             for key in self.mappings[cat]:
-                if key in ['', ' ']:
-                    continue
                 if key in self.mappings[cat]:
                     #my_cat = self.actionmap[cat].get('label', cat)
                     keys.setdefault(cat, {})[key] = [
-                            f"{val['mode']} {' '.join([x for x in filter(lambda x: x, [val.get('mod', ''), key])])}: {val['label']} - {val['description']}"
+                            f"{val['mode']} {' '.join([x for x in filter(lambda x: x, [val.get('mod', ''), key])])}: {val['label']}{' - ' if val['description'] else ''}{val['description']}"
                             for val in self.mappings[cat][key]
                         ]
         return keys
+
+key_order = ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "1", "2", "3", "4", "5", "6", "7", "8",
+             "9", "0", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x",
+             "c", "v", "b", "n", "m", "escape", "grave", "tab", "caps", "lshift", "minus", "equals", "backspace", "lbracket",
+             "rbracket", "backslash", "semicolon", "apostrophe", "enter", "comma", "period", "slash", "rshift", "print",
+             "scrolllock", "pause", "insert", "home", "pgup", "delete", "end" , "pgdn", "np_1" , "np_2", "np_3", "np_4", "np_5",
+             "np_6", "np_7", "np_8", "np_9", "np_0", "np_period", "numlock", "np_divide", "np_multiply", "np_subtract",
+             "np_add", "np_enter", "up", "down", "left", "right", "lctrl", "lwin", "lalt", "space", "ralt", "rwin", "fn",
+             "menu", "rctrl"]
 
 if __name__ == '__main__':
     mappings = Mappings()
@@ -205,8 +212,17 @@ if __name__ == '__main__':
         f.write("mapping_order=")
         json.dump(mappings.mapping_order, f)
         f.write(";\n")
+
+        ordered_keys = []
+        for x in key_order:
+            if x in mappings.all_keys:
+                ordered_keys.append(x)
+        for x in sorted(mappings.all_keys):
+            if x not in ordered_keys:
+                ordered_keys.append(x)
+
         f.write("all_keys=")
-        json.dump([x.lower() for x in filter(lambda x: x not in ['', ' '], mappings.all_keys)], f)
+        json.dump([x.lower() for x in ordered_keys], f)
         f.write(";\n")
         f.write("action_map=")
         json.dump(dict([(k,mappings.actionmap[k].get('label', k)) for k in mappings.actionmap.keys() if k not in ['', ' ']]), f)
