@@ -38,7 +38,7 @@ jobs:
         run: |
           New-Item -Path ./site -ItemType Directory
           Copy-Item -Path *.js ./site
-          # Copy-Item -Path *.css ./site
+          Copy-Item -Path *.css ./site
           Copy-Item -Path ./template.html -Destination ./site/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
