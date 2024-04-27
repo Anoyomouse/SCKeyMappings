@@ -76,7 +76,7 @@ var o_o = function () {
   self.selectedClick = ko.observable();
   self.itemClick = (data) => {
     let selData = ko.unwrap(self.selectedClick);
-    console.log("Click", data, selData, data === selData);
+    // console.log("Click", data, selData, data === selData);
     if (selData === undefined || selData !== data) {
       self.selected(data);
       self.selectedClick(data);
