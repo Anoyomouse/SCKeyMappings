@@ -6,6 +6,24 @@
   border-right: 1px solid gray;
 }
 
+.main_board {
+  display: inline-block;
+  width: 790px;
+  min-width: 790px;
+}
+
+.mid_board {
+  display: inline-block;
+  width: 160px;
+  min-width: 160px;
+}
+
+.np_board {
+  display: inline-block;
+  width: 210px;
+  min-width: 210px;
+}
+
 .key_row {
   display: table-row;
   height: 50px;
@@ -71,7 +89,7 @@
 }
 
 .desc {
-  width: 100%;
+  width: 99%;
   border: 1px solid gray;
   border-radius: 5px;
   margin: 5px;

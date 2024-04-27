@@ -15,12 +15,28 @@ for(i = 0; i <= 2; i++) {
 var o_o = function () {
   var self = this;
   self.keyboard = [];
-  self.keyboard.push(["escape", "gap_fkey", "f1", "f2", "f3", "f4", "gap_fkey", "f5", "f6", "f7", "f8", "gap_fkey", "f9", "f10", "f11", "f12", "gap_20", "print", "scrolllock", "pause"]);
-  self.keyboard.push(["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "minus", "equals", "backspace", "gap_20", "insert", "home", "pgup", "gap_20", "numlock", "np_divide", "np_multiply", "np_subtract"]);
-  self.keyboard.push(["tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "lbracket", "rbracket", "backslash", "gap_20", "delete", "end" , "pgdn", "gap_20", "np_7", "np_8", "np_9", "np_add"]);
-  self.keyboard.push(["caps", "a", "s", "d", "f", "g", "h", "j", "k", "l", "semicolon", "apostrophe", "enter", "gap_20", "gap_key", "gap_key", "gap_key", "gap_20", "np_4", "np_5", "np_6"]);
-  self.keyboard.push(["lshift", "z", "x", "c", "v", "b", "n", "m", "comma", "period", "slash", "rshift", "gap_20", "gap_key", "up" , "gap_key", "gap_20", "np_1" , "np_2", "np_3", "np_enter"]);
-  self.keyboard.push(["lctrl", "lwin", "lalt", "space", "ralt", /*"rwin"*/ "fn", "menu", "rctrl", "gap_20", "left", "down" , "right", "gap_20", "np_0", "np_period"]);
+  self.keyboard.push(["escape", "gap_fkey", "f1", "f2", "f3", "f4", "gap_fkey", "f5", "f6", "f7", "f8", "gap_fkey", "f9", "f10", "f11", "f12"]);
+  self.keyboard.push(["`", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "minus", "equals", "backspace"]);
+  self.keyboard.push(["tab", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "lbracket", "rbracket", "backslash"]);
+  self.keyboard.push(["caps", "a", "s", "d", "f", "g", "h", "j", "k", "l", "semicolon", "apostrophe", "enter"]);
+  self.keyboard.push(["lshift", "z", "x", "c", "v", "b", "n", "m", "comma", "period", "slash", "rshift"]);
+  self.keyboard.push(["lctrl", "lwin", "lalt", "space", "ralt", /*"rwin"*/ "fn", "menu", "rctrl"]);
+
+  self.keyboard_mid = [];
+  self.keyboard_mid.push(["print", "scrolllock", "pause"]);
+  self.keyboard_mid.push(["insert", "home", "pgup"]);
+  self.keyboard_mid.push(["delete", "end" , "pgdn"]);
+  self.keyboard_mid.push(["gap_key", "gap_key", "gap_key"]);
+  self.keyboard_mid.push(["gap_key", "up" , "gap_key"]);
+  self.keyboard_mid.push(["left", "down" , "right"]);
+
+  self.keyboard_np = [];
+  self.keyboard_np.push(["gap_key", "gap_key", "gap_key", "gap_key", "gap_key"]);
+  self.keyboard_np.push(["numlock", "np_divide", "np_multiply", "np_subtract"]);
+  self.keyboard_np.push(["np_7", "np_8", "np_9", "np_add"]);
+  self.keyboard_np.push(["np_4", "np_5", "np_6"]);
+  self.keyboard_np.push(["np_1" , "np_2", "np_3", "np_enter"]);
+  self.keyboard_np.push(["np_0", "np_period"]);
 
   self.used_keys = all_keys;
   self.key_class = function(key) {
@@ -99,7 +115,7 @@ var o_o = function () {
   }
 
   self.toggleCat = (cat) => {
-    console.log("Click", cat);
+    // console.log("Click", cat);
     if (self.selectedCategories.indexOf(cat) >= 0) {
       self.selectedCategories.remove(cat);
     } else {

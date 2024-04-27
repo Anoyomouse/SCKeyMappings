@@ -17,16 +17,42 @@
       </div>
     </nav>
     <div class="keyboard">
-      <!-- ko foreach: { data: keyboard, as: 'row' } -->
-        <div class="key_row" data-bind="foreach: { data: row, as: 'key' }">
-          <!-- ko ifnot: key.startsWith('gap') -->
-          <div class="key" data-bind="text: $root.caption(key), class: $root.key_class(key), click: $root.itemClick, event: { mouseover: $root.mouseOver }"></div>
-          <!-- /ko -->
-          <!-- ko if: key.startsWith('gap') -->
-          <div data-bind="class: key">&nbsp;</div>
-          <!-- /ko -->
-        </div>
-      <!-- /ko -->
+      <div class="main_board">
+        <!-- ko foreach: { data: keyboard, as: 'row' } -->
+          <div class="key_row" data-bind="foreach: { data: row, as: 'key' }">
+            <!-- ko ifnot: key.startsWith('gap') -->
+            <div class="key" data-bind="text: $root.caption(key), class: $root.key_class(key), click: $root.itemClick, event: { mouseover: $root.mouseOver }"></div>
+            <!-- /ko -->
+            <!-- ko if: key.startsWith('gap') -->
+            <div data-bind="class: key">&nbsp;</div>
+            <!-- /ko -->
+          </div>
+        <!-- /ko -->
+      </div>
+      <div class="mid_board">
+        <!-- ko foreach: { data: keyboard_mid, as: 'row' } -->
+          <div class="key_row" data-bind="foreach: { data: row, as: 'key' }">
+            <!-- ko ifnot: key.startsWith('gap') -->
+            <div class="key" data-bind="text: $root.caption(key), class: $root.key_class(key), click: $root.itemClick, event: { mouseover: $root.mouseOver }"></div>
+            <!-- /ko -->
+            <!-- ko if: key.startsWith('gap') -->
+            <div data-bind="class: key">&nbsp;</div>
+            <!-- /ko -->
+          </div>
+        <!-- /ko -->
+      </div>
+      <div class="np_board">
+        <!-- ko foreach: { data: keyboard_np, as: 'row' } -->
+          <div class="key_row" data-bind="foreach: { data: row, as: 'key' }">
+            <!-- ko ifnot: key.startsWith('gap') -->
+            <div class="key" data-bind="text: $root.caption(key), class: $root.key_class(key), click: $root.itemClick, event: { mouseover: $root.mouseOver }"></div>
+            <!-- /ko -->
+            <!-- ko if: key.startsWith('gap') -->
+            <div data-bind="class: key">&nbsp;</div>
+            <!-- /ko -->
+          </div>
+        <!-- /ko -->
+      </div>
     </div>
     <div class="side-bar">
       <div class="side-bar-head">Selected overlays</div>
