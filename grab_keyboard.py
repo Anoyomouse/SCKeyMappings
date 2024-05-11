@@ -61,6 +61,7 @@ class Mappings:
         actionmap = defaultdict(lambda: {})
         modifiers = ['lalt', 'ralt', 'lshift', 'lctrl', 'rctrl']
         all_keys = []
+        all_keys_by_am = defaultdict(lambda: [])
         for child in root:
             if child.tag == 'actionmap':
                 label = self.get_string(child.attrib, 'UILabel', child.attrib['name'])
@@ -105,6 +106,8 @@ class Mappings:
                             data.update({"mod": modifier})
                         if key not in all_keys:
                             all_keys.append(key)
+                        if key not in all_keys_by_am[am_name]:
+                            all_keys_by_am[am_name].append(key)
                         mappings.setdefault(am_name, defaultdict(lambda: []))[key].append(data)
                         # mappings[am_name][key].append(data)
 
@@ -112,6 +115,7 @@ class Mappings:
             self.mappings = mappings
             self.mapping_order = mapping_order
             self.all_keys = all_keys
+            self.all_keys_by_am = all_keys_by_am
 
     def print_key(self, key, val):
         """Prints the key and the value of the key."""
@@ -223,6 +227,9 @@ if __name__ == '__main__':
 
         f.write("all_keys=")
         json.dump([x.lower() for x in ordered_keys], f)
+        f.write(";\n")
+        f.write("all_keys_by_am=")
+        json.dump(mappings.all_keys_by_am, f)
         f.write(";\n")
         f.write("action_map=")
         json.dump(dict([(k,mappings.actionmap[k].get('label', k)) for k in mappings.actionmap.keys() if k not in ['', ' ']]), f)

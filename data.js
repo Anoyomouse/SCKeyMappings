@@ -1,6 +1,7 @@
 mapping_order=["seat_general", "spaceship_general", "spaceship_view", "spaceship_movement", "spaceship_quantum", "spaceship_docking", "spaceship_targeting", "spaceship_targeting_advanced", "spaceship_target_hailing", "spaceship_radar", "spaceship_scanning", "spaceship_mining", "spaceship_salvage", "turret_movement", "turret_advanced", "spaceship_weapons", "spaceship_missiles", "spaceship_defensive", "vehicle_capacitor_assignment", "spaceship_auto_weapons", "spaceship_power", "spaceship_hud", "lights_controller", "vehicle_mobiglas", "stopwatch", "player", "prone", "mapui", "hacking", "tractor_beam", "incapacitated", "zero_gravity_eva", "zero_gravity_traversal", "vehicle_general", "vehicle_driver", "debug", "IFCS_controls", "spectator", "default", "ui_textfield", "ui_notification", "player_emotes", "player_input_optical_tracking", "player_choice", "flycam", "view_director_mode", "character_customizer", "RemoteRigidEntityController", "server_renderer"];
-all_keys=["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m", "escape", "tab", "lshift", "equals", "backspace", "lbracket", "rbracket", "enter", "slash", "rshift", "pause", "home", "pgup", "end", "pgdn", "np_1", "np_2", "np_3", "np_4", "np_5", "np_6", "np_7", "np_8", "np_9", "np_0", "np_period", "np_divide", "np_multiply", "np_subtract", "np_add", "up", "down", "left", "right", "lctrl", "space", "f+mouse2", "hmd_pitch", "hmd_roll", "hmd_yaw", "maxis_z", "mouse1", "mouse2", "mouse3", "mwheel_down", "mwheel_up"];
-action_map={"seat_general": "Vehicles - Seats and Operator Modes", "spaceship_general": "Vehicles - Cockpit", "spaceship_view": "Vehicles - View", "spaceship_movement": "Flight - Movement", "spaceship_quantum": "Flight - Quantum Travel", "spaceship_docking": "Flight - Docking", "spaceship_targeting": "Vehicles - Targeting", "spaceship_targeting_advanced": "Vehicles - Target Cycling", "spaceship_target_hailing": "Flight - Target Hailing", "spaceship_radar": "Flight - Radar", "spaceship_scanning": "Vehicles - Scanning", "spaceship_mining": "Vehicles - Mining", "spaceship_salvage": "spaceship_salvage", "turret_movement": "Turret Movement", "turret_advanced": "Turret Advanced", "spaceship_weapons": "Vehicles - Weapons", "spaceship_missiles": "Vehicles - Missiles", "spaceship_defensive": "Vehicles - Shields and Countermeasures", "vehicle_capacitor_assignment": "Vehicles - Power Triangle Assignment", "spaceship_auto_weapons": "spaceship_auto_weapons", "spaceship_power": "Flight - Power", "spaceship_hud": "Flight - HUD", "lights_controller": "Lights", "vehicle_mobiglas": "Vehicle - Mobiglas", "stopwatch": "Stop Watch", "player": "On Foot - All", "prone": "On Foot - All", "mapui": "mapui", "hacking": "hacking", "tractor_beam": "On Foot - All", "incapacitated": "On Foot - All", "zero_gravity_eva": "E.V.A - All", "zero_gravity_traversal": "zero_gravity_traversal", "vehicle_general": "Ground Vehicle - General", "vehicle_driver": "Ground Vehicle - Movement", "debug": "debug", "IFCS_controls": "IFCS_controls", "spectator": "Electronic Access - Spectator", "default": "Social - General", "ui_textfield": "ui_textfield", "ui_notification": "Social - Invites", "player_emotes": "Social - Emotes", "player_input_optical_tracking": "VOIP, FOIP and Head Tracking", "player_choice": "Quick Keys, Interactions, and Inner Thought", "flycam": "flycam", "view_director_mode": "Camera - Advanced Camera Controls", "character_customizer": "character_customizer", "RemoteRigidEntityController": "RemoteRigidEntityController", "server_renderer": "server_renderer"};
+all_keys=["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "1", "2", "3", "4", "5", "6", "7", "9", "0", "q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m", "escape", "tab", "lshift", "backspace", "lbracket", "rbracket", "enter", "comma", "slash", "rshift", "pause", "home", "pgup", "end", "pgdn", "np_1", "np_2", "np_3", "np_4", "np_5", "np_6", "np_7", "np_8", "np_9", "np_0", "np_period", "np_divide", "np_multiply", "np_subtract", "np_add", "up", "down", "left", "right", "lctrl", "space", "hmd_pitch", "hmd_roll", "hmd_yaw", "maxis_z", "mouse1", "mouse2", "mouse3", "mwheel_down", "mwheel_up"];
+all_keys_by_am={"seat_general": ["u", "y", "comma", "m", "v", "mouse3"], "spaceship_general": ["backspace", "r", "k", "1", "2", "3", "4", "5"], "spaceship_view": ["hmd_yaw", "hmd_pitch", "hmd_roll", "f4", "f", "z"], "spaceship_movement": ["q", "e", "space", "lctrl", "a", "d", "w", "s", "c", "x", "lshift", "maxis_z", "rshift", "n", "k", "b"], "spaceship_quantum": ["mouse1"], "spaceship_docking": ["n", "0"], "spaceship_targeting": ["t", "1", "2", "3", "0", "l"], "spaceship_targeting_advanced": ["t", "4", "5", "6", "7", "r"], "spaceship_target_hailing": ["9"], "spaceship_radar": ["tab"], "spaceship_scanning": ["left", "right", "up", "down"], "spaceship_mining": ["maxis_z", "1", "2", "3", "j"], "spaceship_salvage": ["mwheel_up", "mwheel_down", "a", "d", "w", "s", "g", "maxis_z", "mouse2"], "turret_movement": ["q", "y", "e"], "turret_advanced": ["c", "lshift", "s"], "spaceship_weapons": ["g", "mouse1", "mwheel_down", "mwheel_up", "mouse2"], "spaceship_missiles": ["mouse1", "mouse2", "g", "b"], "spaceship_defensive": ["h", "j", "np_8", "np_2", "np_4", "np_6", "np_7", "np_1", "np_5"], "vehicle_capacitor_assignment": ["f5", "f6", "f7", "f8"], "spaceship_auto_weapons": ["slash"], "spaceship_power": ["u", "i", "o", "p", "f9", "f10"], "spaceship_hud": ["f1", "f2", "x"], "lights_controller": ["l"], "vehicle_mobiglas": ["r", "e", "np_subtract", "np_add", "w", "s", "a", "d", "up", "down", "left", "right", "lctrl"], "player": ["a", "d", "w", "s", "space", "c", "lctrl", "lshift", "q", "e", "1", "2", "g", "v", "3", "5", "6", "r", "x", "j", "u", "b", "pgdn", "pgup", "m", "t", "h", "f4", "f11", "z", "up", "down", "hmd_yaw", "hmd_pitch", "hmd_roll", "f1", "enter", "np_subtract", "np_add", "left", "right", "f2", "backspace", "4"], "mapui": ["a", "d", "w", "s", "space", "lctrl", "e", "q", "r", "c", "t", "2", "z", "lshift", "3", "4", "1"], "hacking": ["rshift", "y", "h", "w", "s", "a", "d", "f", "tab", "q", "r", "e", "i"], "tractor_beam": ["r", "b"], "incapacitated": ["backspace"], "zero_gravity_eva": ["q", "e", "space", "lctrl", "a", "d", "w", "s", "x", "lshift", "z"], "zero_gravity_traversal": ["space", "y", "q", "e"], "vehicle_general": ["space", "f4", "z", "f11", "hmd_yaw", "hmd_pitch", "hmd_roll", "f1", "r", "k", "f2", "x"], "vehicle_driver": ["w", "s", "a", "d", "x", "lshift", "rshift", "c"], "debug": ["f9", "pause", "f11", "np_divide", "f10", "np_multiply", "np_period", "end", "home"], "IFCS_controls": ["a", "b", "x", "y"], "spectator": ["1", "b", "n", "f4", "a", "d", "w", "s", "space", "lctrl", "lshift", "z", "q", "e"], "default": ["np_1", "np_2", "backspace", "o", "f5", "f", "x", "y", "f3", "space", "lctrl", "q", "e", "escape", "up", "down", "left", "right", "tab", "lbracket", "rbracket", "f11", "f12", "c", "v"], "ui_textfield": ["backspace", "up", "down", "left", "right"], "ui_notification": ["lbracket", "rbracket"], "player_emotes": ["np_5", "np_1", "np_3", "np_2", "np_4", "np_6"], "player_input_optical_tracking": ["np_divide", "np_add", "np_subtract", "np_multiply", "np_period"], "player_choice": ["f", "a", "d", "w", "s", "np_0", "i", "tab", "q", "m", "2", "1", "g", "4"], "flycam": ["w", "s", "d", "a", "q", "e", "up", "down", "space", "z", "x", "c"], "view_director_mode": ["f4", "z", "np_1", "np_2", "np_3", "np_4", "np_5", "np_6", "np_7", "np_8", "np_9", "np_0", "right", "left", "up", "down", "pgup", "pgdn", "np_add", "np_subtract", "home", "end", "np_multiply"], "character_customizer": ["lshift", "up", "down", "right", "left", "e", "q", "d", "a", "f", "space"], "RemoteRigidEntityController": ["w", "s", "a", "d", "space", "lctrl", "c", "z", "q", "e", "v", "y", "b"], "server_renderer": ["f4"]};
+action_map={"seat_general": "Vehicles - Seats and Operator Modes", "spaceship_general": "Vehicles - Cockpit", "spaceship_view": "Vehicles - View", "spaceship_movement": "Flight - Movement", "spaceship_quantum": "Flight - Quantum Travel", "spaceship_docking": "Flight - Docking", "spaceship_targeting": "Vehicles - Targeting", "spaceship_targeting_advanced": "Vehicles - Target Cycling", "spaceship_target_hailing": "Flight - Target Hailing", "spaceship_radar": "Flight - Radar", "spaceship_scanning": "Vehicles - Scanning", "spaceship_mining": "Vehicles - Mining", "spaceship_salvage": "spaceship_salvage", "turret_movement": "Turret Movement", "turret_advanced": "Turret Advanced", "spaceship_weapons": "Vehicles - Weapons", "spaceship_missiles": "Vehicles - Missiles", "spaceship_defensive": "Vehicles - Shields and Countermeasures", "vehicle_capacitor_assignment": "Vehicles - Power Triangle Assignment", "spaceship_auto_weapons": "spaceship_auto_weapons", "spaceship_power": "Flight - Power", "spaceship_hud": "Flight - HUD", "lights_controller": "Lights", "vehicle_mobiglas": "Vehicle - Mobiglas", "stopwatch": "Stop Watch", "player": "On Foot - All", "prone": "On Foot - All", "mapui": "mapui", "hacking": "hacking", "tractor_beam": "On Foot - All", "incapacitated": "On Foot - All", "zero_gravity_eva": "E.V.A - All", "zero_gravity_traversal": "E.V.A. - Zero-G Traversal", "vehicle_general": "Ground Vehicle - General", "vehicle_driver": "Ground Vehicle - Movement", "debug": "debug", "IFCS_controls": "IFCS_controls", "spectator": "Electronic Access - Spectator", "default": "Social - General", "ui_textfield": "ui_textfield", "ui_notification": "Social - Invites", "player_emotes": "Social - Emotes", "player_input_optical_tracking": "VOIP, FOIP and Head Tracking", "player_choice": "Quick Keys, Interactions, and Inner Thought", "flycam": "flycam", "view_director_mode": "Camera - Advanced Camera Controls", "character_customizer": "character_customizer", "RemoteRigidEntityController": "RemoteRigidEntityController", "server_renderer": "server_renderer"};
 mapping_data={
   "seat_general": {
     "u": [
@@ -9,24 +10,23 @@ mapping_data={
     "y": [
       "press ralt y: Eject"
     ],
+    "comma": [
+      "delayed_hold_no_retrigger comma: Look behind"
+    ],
     "m": [
-      "tap m: Mining Mode (Toggle) - Mining Mode Toggle",
-      "tap m: Salvage Mode (Toggle) - Activate salvage mode when seated."
+      "press m: v_toggle_mining_mode - Mining Mode Toggle",
+      "press m: v_toggle_salvage_mode - Activate salvage mode when seated."
     ],
     "v": [
-      "tap v: Scanning Mode (Toggle)"
-    ],
-    "b": [
-      "tap b: Quantum Travel System (Toggle)"
+      "press v: v_toggle_scan_mode"
     ],
     "mouse3": [
-      "tap mouse3: Missile Operator Mode (Toggle)",
-      "tap mouse3: v_operator_mode_cycle_forward"
+      "tap mouse3: Next Operator Mode"
     ]
   },
   "spaceship_general": {
     "backspace": [
-      "press backspace: Self Destruct"
+      "delayed_press_medium backspace: Self Destruct"
     ],
     "r": [
       "press ralt r: Flight / Systems Ready - Flight / Systems Ready"
@@ -90,14 +90,19 @@ mapping_data={
       "PR d: Strafe right (abs.)"
     ],
     "w": [
-      "PR w: Throtte - Forward (abs.) - Throtte - Forward (abs.)"
+      "PR w: Throttle - Increase"
     ],
     "s": [
-      "PR s: Throtte - Backward (abs.) - Throtte - Backward (abs.)"
+      "PR s: Throttle - Decrease"
     ],
     "c": [
-      "smart_toggle c: Decoupled Mode (Toggle, Hold)",
-      "press lalt c: Cruise Control (Toggle) - Toggles Cruise Control mode on and off"
+      "P lalt c: Throttle - Cruise Mode - Toggle",
+      "smart_toggle c: Decoupled Mode (Toggle, Hold)"
+    ],
+    "x": [
+      "delayed_press x: Throttle - Trim - Release (Long Press) - Throttle - Trim - Release (Long Press)",
+      "tap x: Throttle - Trim - Release (Short Press) - Throttle - Trim - Release (Short Press)",
+      "PR x: Spacebrake"
     ],
     "lshift": [
       "all lshift: Boost"
@@ -106,35 +111,26 @@ mapping_data={
       " maxis_z: Speed Limiter (Rel.) - Speed Limiter (Rel.)",
       " ralt maxis_z: Acceleration Limiter Up / Down (rel.) - Acceleration Limiter Up / Down (rel.) - Decreases / increases acceleration limiter relative to old value"
     ],
-    "x": [
-      "PR x: Spacebrake"
-    ],
     "rshift": [
       "smart_toggle rshift: Lock Pitch / Yaw Movement (Toggle / Hold) - While active no rotational inputs are allowed to your ship. This is useful for arresting movement when you lost control using a mouse."
     ],
     "n": [
       "tap n: Landing System (Toggle)",
       "delayed_press n: Autoland - Activate Autoland",
-      "tap lalt n: Request Landing - Contacts ATC and other landing services."
+      "tap lalt n: Request Landing - Contacts ATC and other landing services.",
+      "tap ralt n: Request Cargo Loading"
     ],
     "k": [
       "press k: Toggle VTOL",
       "tap lalt k: Cycle Configuration - Cycle between the vehicle's expanded and retracted configurations."
     ],
-    "l": [
-      "tap lalt l: v_atc_loading_area_request"
-    ],
     "b": [
-      "tap b: Cycle Master Mode"
-    ],
-    "equals": [
-      "tap equals: Jump Drive - Request Jump",
-      "delayed_press equals: Jump Drive - Engage Jump"
+      "delayed_press b: Cycle Master Mode (Long Press)"
     ]
   },
   "spaceship_quantum": {
-    "b": [
-      "delayed_press b: Engage Quantum Drive (Hold) - Engages the quantum drive."
+    "mouse1": [
+      "delayed_press mouse1: Engage Quantum Drive (Hold) - Engages the quantum drive."
     ]
   },
   "spaceship_docking": {
@@ -147,6 +143,10 @@ mapping_data={
     ]
   },
   "spaceship_targeting": {
+    "t": [
+      "delayed_press t: Auto Targeting - Toggle On/Off (Long Press) - Auto Targeting - Toggle On/Off (Long Press)",
+      "tap lalt t: Unlock Current Target - Unlock Current Target"
+    ],
     "1": [
       "tap 1: Pin Index 1 - Lock / Unlock Pinned Target",
       "tap lalt 1: Pin Index 1 - Pin / Unpin Selected Target"
@@ -162,9 +162,6 @@ mapping_data={
     "0": [
       "tap 0: Remove All Pinned Targets"
     ],
-    "t": [
-      "tap lalt t: Unlock Locked Target"
-    ],
     "l": [
       "smart_toggle lalt l: Enable / Disable Look Ahead - Enables and disables Look Ahead Mode"
     ]
@@ -176,23 +173,23 @@ mapping_data={
     ],
     "4": [
       "tap 4: Cycle Lock - Attackers - Forward",
-      "tap lalt 4: Cycle Lock - Attackers - Reset to Closest"
+      "tap 4: Cycle Lock - Attackers - Reset to Closest"
     ],
     "5": [
       "tap 5: Cycle Lock - Hostiles - Forward",
-      "tap lalt 5: Cycle Lock - Hostiles - Reset to Closest"
+      "tap 5: Cycle Lock - Hostiles - Reset to Closest"
     ],
     "6": [
       "tap 6: Cycle Lock - Friendlies - Forward",
-      "tap lalt 6: Cycle Lock - Friendlies - Reset to Closest"
+      "tap 6: Cycle Lock - Friendlies - Reset to Closest"
     ],
     "7": [
       "tap 7: Cycle Lock - All - Forward",
-      "tap lalt 7: Cycle Lock - All - Reset to Closest"
+      "tap 7: Cycle Lock - All - Reset to Closest"
     ],
-    "8": [
-      "tap 8: Cycle Lock - Sub-Target - Forward",
-      "tap lalt 8: Cycle Lock - Sub-Target - Reset to Main Target"
+    "r": [
+      "tap r: Cycle Lock - Sub-Target - Forward",
+      "tap lalt r: Cycle Lock - Sub-Target - Reset to Main Target"
     ]
   },
   "spaceship_target_hailing": {
@@ -201,8 +198,8 @@ mapping_data={
     ]
   },
   "spaceship_radar": {
-    "v": [
-      "delayed_hold v: Activate Ping (Hold & Release) - Activates the Ping Wave"
+    "tab": [
+      "hold tab: Activate Ping (Hold & Release) - Activates the Ping Wave"
     ]
   },
   "spaceship_scanning": {
@@ -265,7 +262,7 @@ mapping_data={
     ],
     "g": [
       "press g: Salvage Mode Gimbal (Toggle) - Toggle between gimbled and fixed salvage targeting modes.",
-      " lalt g: v_salvage_reset_gimbal"
+      " lalt g: Salvage Mode Gimbal Reset"
     ],
     "maxis_z": [
       " lalt maxis_z: Relative Beam Spacing - Adjust the relative spacing between the Vulture's two salvage heads."
@@ -281,43 +278,40 @@ mapping_data={
     "y": [
       "PRH y: Exit Remote Turret"
     ],
-    "z": [
-      "hold z: Zoom Toggle (Remote Turret) - Zoom Toggle (Remote Turret)"
-    ],
-    "g": [
-      "press g: Turret Gyro Stabilization (Toggle) - Turret Gyro Stabilization (Toggle)"
+    "e": [
+      "press e: Turret Gyro Stabilization (Toggle) - Turret Gyro Stabilization (Toggle)"
     ]
   },
   "turret_advanced": {
-    "e": [
-      "press e: Turret E.S.P. Toggle On / Off - Enables / Disables Turret E.S.P."
-    ],
     "c": [
       "hold_no_retrigger c: Recenter Turret (Hold)"
     ],
-    "a": [
-      "smart_toggle a: Turret - Speed Limiter - On/Off (Hold/Toggle) - Toggles the limiter for the rotational turret speed",
-      "all a: Turret - Speed Limiter - Decrease (rel) - Decreases the speed of the turret."
-    ],
-    "d": [
-      "all d: Turret - Speed Limiter - Increase (rel) - Increases the speed of the turret."
-    ],
-    "b": [
-      "P b: Cycle fire mode (staggered / combined)"
-    ],
     "lshift": [
-      "all lshift: turret_instant_zoom"
+      "all lshift: Turret Instant Zoom"
     ],
     "s": [
-      "press s: turret_change_position"
+      "press s: Change Turret Position"
     ]
   },
   "spaceship_weapons": {
     "g": [
       "tap lalt g: Manual Gimbal Mode - Swap VJoy / Look Direction (Toggle, Hold) - This will cause the aim reticle to either follow the VJoy indication on the HUD or your look direction.",
       "tap ralt g: Manual Gimbal Mode - Lock Aim Vector - Locks the aim vector in manual gimbal mode.",
-      "tap g: Cycle Fixed / Auto Gimbal Modes",
-      "delayed_press g: Set Manual Gimbal Mode (Long Press)"
+      "tap g: Cycle Gimbal Assist / Standard Gimbal / Gimbal Lock modes"
+    ],
+    "mouse1": [
+      "all mouse1: Weapon Preset - Fire"
+    ],
+    "mwheel_down": [
+      "press mwheel_down: Weapon Presets - Next"
+    ],
+    "mwheel_up": [
+      "press mwheel_up: Weapon Presets - Previous"
+    ],
+    "mouse2": [
+      "tap lalt mouse2: Precision Targeting - Toggle",
+      "delayed_hold lalt mouse2: Precision Targeting - Max Zoom (Hold)",
+      "tap ralt mouse2: Precision Targeting - Toggle Camera Tracking"
     ]
   },
   "spaceship_missiles": {
@@ -331,8 +325,8 @@ mapping_data={
       "tap g: Increase Number of Armed Missiles",
       "tap lalt g: Reset Number of Armed Missiles"
     ],
-    "t": [
-      "delayed_press t: v_weapon_bombing_toggle_desired_impact_point_hold"
+    "b": [
+      "tap lalt b: v_weapon_bombing_toggle_desired_impact_point"
     ]
   },
   "spaceship_defensive": {
@@ -409,10 +403,8 @@ mapping_data={
   },
   "spaceship_hud": {
     "f1": [
-      "press f1: mobiGlas (Toggle)"
-    ],
-    "tab": [
-      "all tab: Scoreboard"
+      "press f1: mobiGlas (Toggle)",
+      "all f1: Scoreboard"
     ],
     "f2": [
       "press f2: Map - Map"
@@ -491,14 +483,12 @@ mapping_data={
       "press space: Jump",
       "hold space: ledgegrab"
     ],
-    "lctrl": [
-      "hold_toggle lctrl: Crouch",
-      "hold lctrl: ui_3d_display_pinMode"
+    "c": [
+      "hold_toggle c: Crouch"
     ],
-    "x": [
-      "press x: Prone",
-      "tap lalt x: reloadSecondary",
-      "press lalt x: Wipe Helmet Visor - Quickly wipe your helmet visor to improve visibility"
+    "lctrl": [
+      "press lctrl: Prone",
+      "hold lctrl: ui_3d_display_pinMode"
     ],
     "lshift": [
       "hold_toggle lshift: Sprint",
@@ -514,37 +504,42 @@ mapping_data={
     ],
     "1": [
       "tap 1: Select Sidearm",
+      "tap 1: Select Primary Weapon",
       "tap 1: select_primary_pit",
+      "press lalt 1: ammoRepool",
       "all 1: pc_conversation_option1"
     ],
     "2": [
-      "tap 2: Select Primary Weapon",
+      "tap 2: Select Secondary Weapon",
       "tap 2: select_secondary_pit",
       "all 2: pc_conversation_option2"
     ],
+    "g": [
+      "tap g: Select Gadget"
+    ],
+    "v": [
+      "tap v: Select Melee - Select Melee",
+      "tap v: select_MeleeWeapon_pit"
+    ],
     "3": [
-      "tap 3: Select Secondary Weapon",
       "tap 3: select_sidearm_pit",
       "all 3: pc_conversation_option3"
     ],
-    "4": [
-      "tap 4: Select Gadget",
-      "tap 4: select_MeleeWeapon_pit",
-      "all 4: pc_conversation_option4"
-    ],
     "5": [
-      "tap 5: Select Melee - Select Melee",
       "tap 5: select_gadget_pit",
       "all 5: pc_conversation_option5"
     ],
-    "0": [
-      "tap 0: Unarmed Combat"
+    "6": [
+      "tap 6: Unarmed Combat"
     ],
     "r": [
       "tap r: Reload",
-      "press lalt r: ammoRepool",
       "delayed_press_medium r: Holster Weapon",
       "tap r: ui_3d_display_reorient"
+    ],
+    "x": [
+      "tap lalt x: reloadSecondary",
+      "press lalt x: Wipe Helmet Visor - Quickly wipe your helmet visor to improve visibility"
     ],
     "j": [
       "tap j: Customize Weapon - Customize Weapon"
@@ -566,6 +561,10 @@ mapping_data={
     ],
     "t": [
       "press t: Flashlight (Toggle)"
+    ],
+    "h": [
+      "tap ralt h: Toggle Equip Helmet - Toggle Equip Helmet",
+      "tap lalt h: Helmet\\n(Equip) - Toggle Equip Helmet"
     ],
     "f4": [
       "tap f4: Third Person View (Toggle)"
@@ -594,10 +593,8 @@ mapping_data={
       " hmd_roll: hmd_rotateroll"
     ],
     "f1": [
-      "press f1: mobiGlas (Toggle)"
-    ],
-    "tab": [
-      " tab: Scoreboard"
+      "press f1: mobiGlas (Toggle)",
+      " f1: Scoreboard"
     ],
     "enter": [
       "press enter: pl_hud_confirm"
@@ -619,6 +616,9 @@ mapping_data={
     ],
     "backspace": [
       "delayed_press_medium backspace: Force Re-spawn (E.V.A. / On Foot)"
+    ],
+    "4": [
+      "all 4: pc_conversation_option4"
     ]
   },
   "mapui": {
@@ -634,11 +634,46 @@ mapping_data={
     "s": [
       "hold s: mapui_pan_back"
     ],
+    "space": [
+      "PR space: mapui_pan_up"
+    ],
+    "lctrl": [
+      "PR lctrl: mapui_pan_down"
+    ],
     "e": [
-      "PR e: mapui_cycle_section_up"
+      "PR e: mapui_cycle_section_forward",
+      "PR lshift e: mapui_cycle_zone_forward"
     ],
     "q": [
-      "PR q: mapui_cycle_section_down"
+      "PR q: mapui_cycle_section_backward",
+      "PR lshift q: mapui_cycle_zone_backward"
+    ],
+    "r": [
+      "PR r: mapui_action_planroute"
+    ],
+    "c": [
+      "PR c: mapui_action_clearroute"
+    ],
+    "t": [
+      "PR t: mapui_action_togglepin"
+    ],
+    "2": [
+      "PR 2: mapui_action_mylocation"
+    ],
+    "z": [
+      "PR z: mapui_action_toggle_view_entire_zone"
+    ],
+    "lshift": [
+      "hold lshift: mapui_action_toggleQTActions"
+    ],
+    "3": [
+      "PR 3: mapui_action_goto_selection"
+    ],
+    "4": [
+      "PR 4: mapui_action_step_back"
+    ],
+    "1": [
+      "PR 1: mapui_action_transition"
     ]
   },
   "hacking": {
@@ -666,8 +701,8 @@ mapping_data={
     "f": [
       "press f: hacking_minigame_ability_inject"
     ],
-    "v": [
-      "delayed_press v: hacking_minigame_ability_ping"
+    "tab": [
+      "delayed_press tab: hacking_minigame_ability_ping"
     ],
     "q": [
       "press q: hacking_minigame_ability_slowdown"
@@ -732,10 +767,10 @@ mapping_data={
   },
   "zero_gravity_traversal": {
     "space": [
-      "hold space: zgt_launch"
+      "hold space: Launch from Surface"
     ],
     "y": [
-      "press y: zgt_detach"
+      "press y: Detach from Surface"
     ],
     "q": [
       "press q: Roll Left"
@@ -804,8 +839,8 @@ mapping_data={
     "rshift": [
       "smart_toggle rshift: Lock Pitch / Yaw Movement (Toggle / Hold) - While active no rotational inputs are allowed to your ship. This is useful for arresting movement when you lost control using a mouse."
     ],
-    "v": [
-      "press v: v_mgv_switch_brake_on_idle"
+    "c": [
+      "press c: v_mgv_switch_brake_on_idle"
     ]
   },
   "debug": {
@@ -966,7 +1001,14 @@ mapping_data={
       "PRH right: flashui_right"
     ],
     "tab": [
-      "PR tab: flashui_tab"
+      "PR tab: flashui_tab",
+      "press tab: cycle_chat_lobby - Press to cycle through subscribed lobbies in chat"
+    ],
+    "lbracket": [
+      "press lbracket: notification_accept"
+    ],
+    "rbracket": [
+      "press rbracket: notification_decline"
     ],
     "f11": [
       "press f11: CommLink App (Toggle)"
@@ -1047,7 +1089,8 @@ mapping_data={
   },
   "player_choice": {
     "f": [
-      "RH f: Interaction Mode - Interaction Mode"
+      "RH f: Interaction Mode - Interaction Mode",
+      "press lalt f: Personal Inner Thought (PIT) - Personal Inner Thought"
     ],
     "a": [
       "press a: MFD Left"
@@ -1061,38 +1104,37 @@ mapping_data={
     "s": [
       "press s: MFD Down"
     ],
-    "f+mouse2": [
-      "press f+mouse2: Personal Inner Thought (PIT) - Personal Inner Thought"
-    ],
     "np_0": [
       "press np_0: Exit"
     ],
     "i": [
-      "press i: Personal Commodity Inventory (Toggle)"
+      "tap i: Personal Commodity Inventory (Toggle)",
+      "delayed_press i: Personal Commodity Inventory (Toggle)"
+    ],
+    "tab": [
+      "press tab: pc_pit_looting_toggle_view"
+    ],
+    "q": [
+      "press q: pc_pit_looting_toggle_weapon_attachments"
     ],
     "m": [
       "press lalt m: Mining Mode Actions - PIT Category"
     ],
-    "3": [
-      "all 3: Weapon Select Radial Menu",
-      "all 3: pc_qs_weapons_pit_sidearm"
+    "2": [
+      "all 2: Weapon Select Radial Menu",
+      "all 2: pc_qs_weapons_pit_sidearm"
     ],
     "1": [
       "all 1: Weapon Select Radial Menu",
-      "all 1: pc_qs_weapons_pit_primary"
-    ],
-    "2": [
-      "all 2: Weapon Select Radial Menu",
-      "all 2: pc_qs_weapons_pit_secondary"
+      "all 1: Weapon Select Radial Menu",
+      "all 1: pc_qs_weapons_pit_primary",
+      "all 1: pc_qs_weapons_pit_secondary"
     ],
     "g": [
       "all g: Throwable Select Radial Menu"
     ],
-    "c": [
-      "all c: pc_qs_consumables"
-    ],
-    "tab": [
-      "all lshift tab: Flight Mode Select Radial Menu"
+    "4": [
+      "all 4: pc_qs_consumables"
     ]
   },
   "flycam": {
@@ -1232,6 +1274,26 @@ mapping_data={
     "left": [
       "PR left: character_customizer_edit_dna_neg",
       "PR left: character_customizer_yaw_left"
+    ],
+    "e": [
+      "P e: character_customizer_step_up"
+    ],
+    "q": [
+      "P q: character_customizer_step_down"
+    ],
+    "d": [
+      "P d: character_customizer_feature_up",
+      "P d: character_customizer_dnamode_up"
+    ],
+    "a": [
+      "P a: character_customizer_feature_down",
+      "P a: character_customizer_dnamode_down"
+    ],
+    "f": [
+      "P f: character_customizer_next_material_region"
+    ],
+    "space": [
+      "P space: character_customizer_toggle_face_tracking"
     ]
   },
   "RemoteRigidEntityController": {

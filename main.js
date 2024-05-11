@@ -41,8 +41,23 @@ var o_o = function () {
   self.used_keys = all_keys;
   self.key_class = function(key) {
     clas = "key_" + key
-    if (self.used_keys.indexOf(key) >= 0) {
-      clas += " used";
+
+    // Only display keys used on the curently selected overlays
+    //if (self.selectedCategories.length == self.categories.length) {
+      if (self.used_keys.indexOf(key) >= 0) {
+        clas += " used";
+      }
+    /*} else {
+      found = false;
+      ko.utils.arrayForEach(self.selectedCategories, (cat) => {
+        if (key in all_keys_by_am[cat]) {
+          found = true;
+          return true;
+        }
+      });
+      if (found) {
+        clas += " used";
+      }*/
     }
     if (self.selectedClick() == key) {
       clas += " fixed"
@@ -122,5 +137,14 @@ var o_o = function () {
       self.selectedCategories.push(cat);
     }
   }
+
+  self.selectAll = () => {
+    self.selectedCategories.removeAll();
+    ko.utils.arrayPushAll(self.selectedCategories, self.categories);
+  };
+
+  self.deselectAll = () => {
+    self.selectedCategories.removeAll();
+  };
 }
 ko.applyBindings(new o_o());

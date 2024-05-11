@@ -59,6 +59,11 @@
       <ul class="list-group side-bar-list" data-bind="foreach: categories">
         <li class="list-group-item" data-bind="text: action_map[$data], class: $root.catClass($data), click: $root.toggleCat"></li>
       </ul>
+      <!--
+      <div class="btn" data-bind="click: selectAll">Select All</div>
+      <div class="btn" data-bind="click: deselectAll">Deselect All</div>
+      -->
+      <!-- TODO: Add select all and deselect all buttons -->
     </div>
     <div class="desc" data-bind="foreach: { data: selectedKeyDescription, as: 'item' }">
       <div class="desc_group">
