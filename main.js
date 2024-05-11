@@ -57,8 +57,8 @@ var o_o = function () {
       });
       if (found) {
         clas += " used";
-      }*/
-    }
+      }
+    }*/
     if (self.selectedClick() == key) {
       clas += " fixed"
     }
